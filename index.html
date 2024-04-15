@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+
+    <div class="container">
+        <div class="player-status">
+            <!-- <div class="player-count">
+                Player 'X' Count: <span id="player-x-count"></span>
+            </div> -->
+            <!-- <button id="reset-button">Reset</button> -->
+            <div class="player-turn">
+                Player '<span id="player-turn">X</span>' Turn
+            </div>
+            <!-- <div class="player-count">
+                Player 'O' Count: <span id="player-o-count"></span>
+            </div> -->
+        </div>
+
+        <div class="game-board" id="game-board">
+
+        </div>
+        <div class="game-status">
+            <div class="player-count">
+                Player 'X' Count: <span id="player-x-count"></span>
+            </div>
+            <div class="control-button" id="control-button">
+                <button id="reset-button">Reset Status</button>
+                <button id="new-game-btn">New Game</button>
+            </div>
+            <!-- <div class="player-turn">
+                Player '<span id="player-turn">X</span>' Turn
+            </div> -->
+            <div class="player-count">
+                Player 'O' Count: <span id="player-o-count"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <dialog id="dialog" class="dialog">
+        <div class="dialog-message" id="dialog-message">
+            Player 'X' wins...
+        </div>
+        <button type="button" id="close-button" autofocus>Close</button>
+        <button type="button" id="new-game-button" autofocus>New Game</button>
+    </dialog>
+</body>
+
+</html>
