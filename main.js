@@ -129,6 +129,7 @@ function checkForWin() {
         playerXCount.innerHTML = playerXCnt;
         dialogMessage.innerHTML = "Player 'X' wins";
         gameDialog.showModal();
+        boardTiles.forEach((tile) => tile.setAttribute("disabled", true));
     }
     else {
         if (boardTilesCaption[0] == 'O' && boardTilesCaption[1] == 'O' && boardTilesCaption[2] == 'O' ||
@@ -144,6 +145,7 @@ function checkForWin() {
             playerOCount.innerHTML = playerOCnt;
             dialogMessage.innerHTML = "Player 'O' wins";
             gameDialog.showModal();
+            boardTiles.forEach((tile) => tile.setAttribute("disabled", true));
         }
         else {
             if (moveCount == 9) {

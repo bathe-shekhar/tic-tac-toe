@@ -49,6 +49,10 @@ header h1 {
     font-family: cursive;
 }
 
+.tile:hover {
+    scale: 1.05;
+}
+
 .container {
     padding-top: 50px;
 }
@@ -66,7 +70,8 @@ header h1 {
     background-color: #BFD8AF;
     border: 2px #E1F0DA;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 600;
     padding: 10px 15px;
     border-radius: 10px;
 }
